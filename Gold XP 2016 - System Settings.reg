@@ -1,0 +1,766 @@
+Windows Registry Editor Version 5.00
+
+;===============================================================================
+; ******************************* Context Menus *******************************
+;===============================================================================
+
+; Adds "Open file location" item to the Explorer Context Menu.
+
+[HKEY_CLASSES_ROOT\*\shell\File Location]
+@="&Open file location"
+[HKEY_CLASSES_ROOT\*\shell\File Location\command]
+@="\"explorer.exe\" /select,\"%1\""
+;-------------------------------------------------------------------------------
+
+; Adds "Open command window here" item to the Explorer Context Menu for Directories and Drives and Folders.
+
+;[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+;@="&Open command window here"
+;[HKEY_CLASSES_ROOT\Directory\shell\cmd\command]
+;@="\"cmd.exe\" /S /K PUSHD \"%1\" & TITLE Command Prompt"
+
+;[HKEY_CLASSES_ROOT\Drive\shell\cmd]
+;@="&Open command window here"
+;[HKEY_CLASSES_ROOT\Drive\shell\cmd\command]
+;@="\"cmd.exe\" /S /K PUSHD \"%1\" & TITLE Command Prompt"
+
+;[HKEY_CLASSES_ROOT\Folder\shell\cmd]
+;@="&Open command window here"
+;[HKEY_CLASSES_ROOT\Folder\shell\cmd\command]
+;@="\"cmd.exe\" /S /K PUSHD \"%1\" & TITLE Command Prompt"
+;-------------------------------------------------------------------------------
+
+; Treats the "*.nfo" files like text files.
+
+[HKEY_CLASSES_ROOT\.nfo]
+@="txtfile"
+"PerceivedType"="text"
+"Content Type"="text/plain"
+[HKEY_CLASSES_ROOT\.nfo\PersistentHandler]
+@="{5e941d80-bf96-11cd-b579-08002b30bfeb}"
+[HKEY_CLASSES_ROOT\.nfo\ShellNew]
+"NullFile"=""
+;-------------------------------------------------------------------------------
+
+; Treats the "*.sif" files like text files.
+
+[HKEY_CLASSES_ROOT\.sif]
+@="txtfile"
+"PerceivedType"="text"
+"Content Type"="text/plain"
+[HKEY_CLASSES_ROOT\.sif\PersistentHandler]
+@="{5e941d80-bf96-11cd-b579-08002b30bfeb}"
+[HKEY_CLASSES_ROOT\.sif\ShellNew]
+"NullFile"=""
+;-------------------------------------------------------------------------------
+
+; Adds "Register" & "Unregister" to the Explorer Context Menu for the "*.dll" files.
+
+[HKEY_CLASSES_ROOT\.dll]
+"Content Type"="application/x-msdownload"
+@="dllfile"
+[HKEY_CLASSES_ROOT\dllfile]
+@="Application Extension"
+[HKEY_CLASSES_ROOT\dllfile\Shell\Register\command]
+@="regsvr32.exe \"%1\""
+[HKEY_CLASSES_ROOT\dllfile\Shell\UnRegister\command]
+@="regsvr32.exe /u \"%1\""
+;-------------------------------------------------------------------------------
+
+; Adds "Register" & "Unregister" to the Explorer Context Menu for the "*.ocx" and "*.ax" files.
+
+[HKEY_CLASSES_ROOT\.ocx]
+@="ocxfile"
+[HKEY_CLASSES_ROOT\ocxfile]
+@="OCX"
+[HKEY_CLASSES_ROOT\ocxfile\Shell\Register\command]
+@="regsvr32.exe \"%1\""
+[HKEY_CLASSES_ROOT\ocxfile\Shell\UnRegister\command]
+@="regsvr32.exe /u \"%1\""
+
+[HKEY_CLASSES_ROOT\.ax]
+@="ocxfile"
+[HKEY_CLASSES_ROOT\axfile]
+@="OCX"
+[HKEY_CLASSES_ROOT\ocxfile\Shell\Register\command]
+@="regsvr32.exe \"%1\""
+[HKEY_CLASSES_ROOT\ocxfile\Shell\UnRegister\command]
+@="regsvr32.exe /u \"%1\""
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ************************** Folder view and Taskbar **************************
+;===============================================================================
+
+; Enables Pin Folder to Start Menu.
+
+[HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\{A2A9545D-A0C2-42B4-9708-A0B2BADD77C8}]
+;-------------------------------------------------------------------------------
+
+; Enables advanced files and folders sharing.
+
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+;"forceguest"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables the warning message when selecting the option "Hide protected operating system files".
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Folder\SuperHidden]
+"WarningIfNotDefault"=-
+;-------------------------------------------------------------------------------
+
+; Sets the number of documents displayed in My Recent Documents at the Start Menu (dword:00000012 = 18).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"MaxRecentDocs"=dword:00000012
+[HKEY_USERS\TempHive\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"MaxRecentDocs"=dword:00000012
+;-------------------------------------------------------------------------------
+
+; Removes Shared Documents in My Computer.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSharedDocuments"=dword:00000001
+[HKEY_USERS\TempHive\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoSharedDocuments"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the Icons cache size from 512 to 4096.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"Max Cached Icons"="4096"
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; **************************** General Customation ****************************
+;===============================================================================
+
+; Regional and Language Settings.
+
+;[HKEY_USERS\.DEFAULT\Control Panel\International]
+;"iCalendarType"="1"
+;"iCountry"="352"
+;"iCurrDigits"="2"
+;"iCurrency"="3"
+;"iDate"="1"
+;"iDigits"="2"
+;"iFirstDayOfWeek"="0"
+;"iFirstWeekOfYear"="0"
+;"iLZero"="1"
+;"iMeasure"="0"
+;"iNegCurr"="8"
+;"iNegNumber"="1"
+;"iTime"="1"
+;"iTimePrefix"="0"
+;"iTLZero"="1"
+;"Locale"="0000046E"
+;"NumShape"="1"
+;"s1159"=""
+;"s2359"=""
+;"sCountry"="Luxembourg"
+;"sCurrency"="€"
+;"sDate"="."
+;"sDecimal"=","
+;"sGrouping"="3;0"
+;"sLanguage"="LBX"
+;"sList"=";"
+;"sLongDate"="dddd d MMMM yyyy"
+;"sMonDecimalSep"=","
+;"sMonGrouping"="3;0"
+;"sMonThousandSep"=","
+;"sNativeDigits"="0123456789"
+;"sPositiveSign"=""
+;"sNegativeSign"="-"
+;"sShortDate"="dd.MM.yyyy"
+;"sThousand"=" "
+;"sTime"=":"
+;"sTimeFormat"="HH:mm:ss"
+;[HKEY_USERS\TempHive\Control Panel\International]
+;"iCalendarType"="1"
+;"iCountry"="352"
+;"iCurrDigits"="2"
+;"iCurrency"="3"
+;"iDate"="1"
+;"iDigits"="2"
+;"iFirstDayOfWeek"="0"
+;"iFirstWeekOfYear"="0"
+;"iLZero"="1"
+;"iMeasure"="0"
+;"iNegCurr"="8"
+;"iNegNumber"="1"
+;"iTime"="1"
+;"iTimePrefix"="0"
+;"iTLZero"="1"
+;"Locale"="0000046E"
+;"NumShape"="1"
+;"s1159"=""
+;"s2359"=""
+;"sCountry"="Luxembourg"
+;"sCurrency"="€"
+;"sDate"="."
+;"sDecimal"=","
+;"sGrouping"="3;0"
+;"sLanguage"="LBX"
+;"sList"=";"
+;"sLongDate"="dddd d MMMM yyyy"
+;"sMonDecimalSep"=","
+;"sMonGrouping"="3;0"
+;"sMonThousandSep"=","
+;"sNativeDigits"="0123456789"
+;"sPositiveSign"=""
+;"sNegativeSign"="-"
+;"sShortDate"="dd.MM.yyyy"
+;"sThousand"=" "
+;"sTime"=":"
+;"sTimeFormat"="HH:mm:ss"
+;[HKEY_CURRENT_USER\Control Panel\International]
+;"iCalendarType"="1"
+;"iCountry"="352"
+;"iCurrDigits"="2"
+;"iCurrency"="3"
+;"iDate"="1"
+;"iDigits"="2"
+;"iFirstDayOfWeek"="0"
+;"iFirstWeekOfYear"="0"
+;"iLZero"="1"
+;"iMeasure"="0"
+;"iNegCurr"="8"
+;"iNegNumber"="1"
+;"iTime"="1"
+;"iTimePrefix"="0"
+;"iTLZero"="1"
+;"Locale"="0000046E"
+;"NumShape"="1"
+;"s1159"=""
+;"s2359"=""
+;"sCountry"="Luxembourg"
+;"sCurrency"="€"
+;"sDate"="."
+;"sDecimal"=","
+;"sGrouping"="3;0"
+;"sLanguage"="LBX"
+;"sList"=";"
+;"sLongDate"="dddd d MMMM yyyy"
+;"sMonDecimalSep"=","
+;"sMonGrouping"="3;0"
+;"sMonThousandSep"=","
+;"sNativeDigits"="0123456789"
+;"sPositiveSign"=""
+;"sNegativeSign"="-"
+;"sShortDate"="dd.MM.yyyy"
+;"sThousand"=" "
+;"sTime"=":"
+;"sTimeFormat"="HH:mm:ss"
+;[HKEY_USERS\.DEFAULT\Control Panel\International\Calendars\TwoDigitYearMax]
+;"1"="2039"
+;"2"="2039"
+;"9"="2039"
+;"10"="2039"
+;"11"="2039"
+;"12"="2039"
+;[HKEY_USERS\TempHive\Control Panel\International\Calendars\TwoDigitYearMax]
+;"1"="2039"
+;"2"="2039"
+;"9"="2039"
+;"10"="2039"
+;"11"="2039"
+;"12"="2039"
+;[HKEY_CURRENT_USER\Control Panel\International\Calendars\TwoDigitYearMax]
+;"1"="2039"
+;"2"="2039"
+;"9"="2039"
+;"10"="2039"
+;"11"="2039"
+;"12"="2039"
+;[HKEY_USERS\.DEFAULT\Control Panel\International\Geo]
+;"Nation"="147"
+;[HKEY_USERS\TempHive\Control Panel\International\Geo]
+;"Nation"="147"
+;[HKEY_CURRENT_USER\Control Panel\International\Geo]
+;"Nation"="147"
+;-------------------------------------------------------------------------------
+
+; Keyboard input Languages:
+; 1 (Default) = English (United States) - US
+; 2 = German (Luxembourg) - German
+; 3 = French (Luxembourg) - Belgian (Comma)
+
+;[-HKEY_USERS\.DEFAULT\Keyboard Layout\Preload]
+;[HKEY_USERS\.DEFAULT\Keyboard Layout\Preload]
+;"1"="00000409"
+;"2"="0000140c"
+;"3"="00001007"
+;[-HKEY_USERS\TempHive\Keyboard Layout\Preload]
+;[HKEY_USERS\TempHive\Keyboard Layout\Preload]
+;"1"="00000409"
+;"2"="0000140c"
+;"3"="00001007"
+;[-HKEY_CURRENT_USER\Keyboard Layout\Preload]
+;[HKEY_CURRENT_USER\Keyboard Layout\Preload]
+;"1"="00000409"
+;"2"="0000140c"
+;"3"="00001007"
+;[-HKEY_USERS\.DEFAULT\Keyboard Layout\Substitutes]
+;[HKEY_USERS\.DEFAULT\Keyboard Layout\Substitutes]
+;"00001007"="00000407"
+;"0000140c"="0001080c"
+;[-HKEY_USERS\TempHive\Keyboard Layout\Substitutes]
+;[HKEY_USERS\TempHive\Keyboard Layout\Substitutes]
+;"00001007"="00000407"
+;"0000140c"="0001080c"
+;[-HKEY_CURRENT_USER\Keyboard Layout\Substitutes]
+;[HKEY_CURRENT_USER\Keyboard Layout\Substitutes]
+;"00001007"="00000407"
+;"0000140c"="0001080c"
+;-------------------------------------------------------------------------------
+
+; Don't show the close Language Bar dialoge prompt.
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\CTF\MSUTB]
+"DontShowCloseLangBarDlg"=dword:00000001
+[HKEY_USERS\TempHive\Software\Microsoft\CTF\MSUTB]
+"DontShowCloseLangBarDlg"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\CTF\MSUTB]
+"DontShowCloseLangBarDlg"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Hides the additional Language Bar icons in the taskbar.
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\CTF\LangBar]
+"ExtraIconsOnMinimized"=dword:00000000
+[HKEY_USERS\TempHive\Software\Microsoft\CTF\LangBar]
+"ExtraIconsOnMinimized"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\CTF\LangBar]
+"ExtraIconsOnMinimized"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Turns On the option "Extend support of advanced text services to all programs".
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\SystemShared]
+"CUAS"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Allows the renaming of Recycle Bin.
+
+[HKEY_CLASSES_ROOT\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\ShellFolder]
+"Attributes"=hex:50,01,00,20 
+"CallForAttributes"=dword:00000000
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ***************************** General settings ******************************
+;===============================================================================
+
+; Time Zone Settings.
+
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+;"ActiveTimeBias"=dword:ffffff88
+;"Bias"=dword:ffffffc4
+;"DaylightBias"=dword:ffffffc4
+;"DaylightName"="Romance Daylight Time"
+;"DaylightStart"=hex:00,00,03,00,05,00,02,00,00,00,00,00,00,00,00,00
+;"StandardBias"=dword:00000000
+;"StandardName"="Romance Standard Time"
+;"StandardStart"=hex:00,00,0a,00,05,00,03,00,00,00,00,00,00,00,00,00
+;-------------------------------------------------------------------------------
+
+; Disables the Automatic computer restart after a Blue Screen.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables Error Reporting, but notify when errors occur.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PCHealth\ErrorReporting]
+"DoReport"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays Verbose Security Status Messages if Windows XP is shutting down or boots up.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system]
+"VerboseStatus"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Search in unregistered file types.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex]
+"FilterFilesWithUnknownExtensions"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Considers all characters of a file extension at the Windows Command Prompt instead of only the first three characters.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"Win95TruncatedExtensions"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Shows the Non Present Devices when the option Show Hidden Devices is selected at the Device Manager.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"DEVMGR_SHOW_NONPRESENT_DEVICES"="1"
+;-------------------------------------------------------------------------------
+
+; Disables searching Windows Update for drivers when a new Hardware has been detected.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DriverSearching]
+"DontPromptForWindowsUpdate"=dword:00000001
+"DontSearchWindowsUpdate"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets default selected options for Disk Cleanup.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Active Setup Temp Folders]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Compress old files]
+"StateFlags"=dword:00000000
+"StateFlags0000"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Content Indexer Cleaner]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Downloaded Program Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Internet Cache Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Memory Dump Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Microsoft Office Temp Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Microsoft_Event_Reporting_2.0_Temp_Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Offline Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Offline Pages Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Old ChkDsk Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Recycle Bin]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Remote Desktop Cache Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Setup Log Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\System Restore]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Offline Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Temporary Sync Files]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Uninstall Backup Image]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\WebClient and WebPublisher Cache]
+"StateFlags"=dword:00000001
+"StateFlags0000"=dword:00000002
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; **************************** Internet Explorer 8 ****************************
+;===============================================================================
+
+; Changes the maximum simultaneous downloads per server from 6 to 10.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPER1_0SERVER]
+"iexplore.exe"=dword:00000010
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPERSERVER]
+"iexplore.exe"=dword:00000010
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ********************************** Network **********************************
+;===============================================================================
+
+; Disables adding Remote shared folders to My Network Places when opening a shared document.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsNetHood"=dword:00000001
+[HKEY_USERS\TempHive\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsNetHood"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Removes the Scheduled Tasks in Network Share.
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{D6277990-4C6A-11CF-8D87-00AA0060F5BF}]
+;-------------------------------------------------------------------------------
+
+; Removes Printers and Faxes in Network Share.
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{2227A280-3AEA-1069-A2DE-08002B30309D}]
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; **************************** Startup / Shutdown *****************************
+;===============================================================================
+
+; Unhides the Administrator Account.
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList]
+;"Administrator"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the automatic termination time for a frozen Service (20000 milliseconds = 20 seconds).
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="20000"
+;-------------------------------------------------------------------------------
+
+; Enables Hibernate.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"Heuristics"=hex:05,00,00,00,00,01,01,00,b2,4d,00,00,f0,00,00,00,4f,00,00,00
+;-------------------------------------------------------------------------------
+
+; Displays Hibernate button on the Start menu when clicking on the Turn Off Computer button.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System\Shutdown]
+"ShowHibernateButton"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Shows the Hibernate button if the computer is on a domain and also at the classic Shut Down menu.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System\Shutdown]
+"HibernateAsDefault"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Turns the Screensaver automatically on when the system is waiting at the logon screen (300 = Seconds).
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"ScreenSaveActive"="1"
+"ScreenSaveTimeOut"="300"
+"SCRNSAVE.EXE"="logon.scr"
+;-------------------------------------------------------------------------------
+
+; Turns the Monitor automatically off when the system is waiting at the logon screen (600 = Seconds).
+
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"PowerOffActive"="1"
+"PowerOffTimeOut"="600"
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ********************************* Security **********************************
+;===============================================================================
+
+; Turns Off Auto Run on all drives.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+[HKEY_USERS\TempHive\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+;-------------------------------------------------------------------------------
+
+; Keeps Auto Play option if Auto Run is turned off.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]
+"HonorAutorunSetting"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Truns off the Security Center Firewall monitoring.
+
+[HKEY_Local_MACHINE\SOFTWARE\Microsoft\Security Center]
+"FirewallOverride"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Truns off the Security Center AntiVirus monitoring.
+
+[HKEY_Local_MACHINE\SOFTWARE\Microsoft\Security Center]
+"AntiVirusOverride"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Windows File Protection:
+; dword:00000000 = Enable (Standard).
+; dword:00000001 = Disable with prompt at reboot to re-enable it (Only for the Debug mode).
+; dword:00000002 = Disable without nag prompt at reboot to re-enable it (Only for the Debug mode).
+; dword:00000004 = Enable but disable all prompts (Standard on some Windows Server versions).
+; dword:ffffff9d = Disable.
+; If a Windows XP Component is removed or if a System File is patched then this needs be set to "dword:ffffff9d" or "dword:00000004".
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"SFCDisable"=dword:ffffff9d
+;-------------------------------------------------------------------------------
+
+; Disables the Default Hidden Shares. This keeps Windows from automatically creating the "C$ ... + ADMIN$" shares.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"AutoShareWks"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Allows blank login passwords.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"LimitBlankPasswordUse"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Makes the Administartors group the owner of files instead of the individual Administrator account.
+
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+;"NoDefaultAdminOwner"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Automatic Windows Updates:
+; 1 = Turn Off Automatic Updates.
+; 2 = Notify me but don't automatically download or install them.
+; 3 = Download updates for me, but let me choose when to install them.
+; 4 = Automatically download and install them.
+; 5 = Automatic Updates is required, but end users can configure it.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update]
+"AUOptions"=dword:00000004
+;-------------------------------------------------------------------------------
+
+; Allows all users to download and install Windows Updates.
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate]
+"ElevateNonAdmins"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables the automatic system reboot after a Windows Update when a user is logged on.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Re-prompts every X Minutes for a system reboot if required after a Windows Update (dword:000005a0 = 1440 Minutes - Maximum).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"RebootRelaunchTimeoutEnabled"=dword:00000001
+"RebootRelaunchTimeout"=dword:000005a0
+;-------------------------------------------------------------------------------
+
+; Disables Windows Firewall.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
+"EnableFirewall"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Allows .chm files to be open over Network.
+
+; 1 = Local machine zone + Local intranet zone
+; 2 = Local machine zone + Local intranet zone + Trusted sites zone
+; 3 = Local machine zone + Local intranet zone + Trusted sites zone + Internet zone
+; 4 = Local machine zone + Local intranet zone + Trusted sites zone + Internet zone + Restricted sites zone
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HTMLHelp\1.x\HHRestrictions]
+"MaxAllowedZone"=dword:00000003
+;-------------------------------------------------------------------------------
+
+; Allows ActiveX control in the .chm files.
+
+; 1 = Local machine zone + Local intranet zone
+; 2 = Local machine zone + Local intranet zone + Trusted sites zone
+; 3 = Local machine zone + Local intranet zone + Trusted sites zone + Internet zone
+; 4 = Local machine zone + Local intranet zone + Trusted sites zone + Internet zone + Restricted sites zone
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HTMLHelp\1.x\HHRestrictions]
+"MaxAllowedZone"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Enables cross-frame navigation by the ActiveX control in the .chm files.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\HTMLHelp\1.x\HHRestrictions]
+"EnableFrameNavigationInSafeMode"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Displays the "*.pif" file extension.
+
+[HKEY_CLASSES_ROOT\piffile]
+"AlwaysShowExt"="1"
+"NeverShowExt"=-
+;-------------------------------------------------------------------------------
+
+; Displays the "*.scf" file extension.
+
+[HKEY_CLASSES_ROOT\SHCmdFile]
+"AlwaysShowExt"="1"
+"NeverShowExt"=-
+;-------------------------------------------------------------------------------
+
+; Displays the "*.shb" file extension.
+
+[HKEY_CLASSES_ROOT\DocShortcut]
+"AlwaysShowExt"="1"
+"NeverShowExt"=-
+;-------------------------------------------------------------------------------
+
+; Displays the "*.shs" file extension.
+
+[HKEY_CLASSES_ROOT\ShellScrap]
+"AlwaysShowExt"="1"
+"NeverShowExt"=-
+;-------------------------------------------------------------------------------
+
+; Displays the "*.url" file extension.
+
+[HKEY_CLASSES_ROOT\InternetShortcut]
+"AlwaysShowExt"="1"
+"NeverShowExt"=-
+;-------------------------------------------------------------------------------
+
+; Disables the System Restore Service.
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+;"DisableSR"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables reporting infection information back to Microsoft for the Microsoft Windows Malicious Software Removal Tool.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontReportInfectionInformation"=dword:00000001
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ***************************** Sytem Performance *****************************
+;===============================================================================
+
+; Adds the check box "Run in Separate Memory Space" to the Run dialog box.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer]
+"MemCheckBoxInRunDlg"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Opens 16-bit applications in a separate memory space (this increases stability when dealing with 16-bit applications).
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WOW]
+"DefaultSeparateVDM"="yes"
+;-------------------------------------------------------------------------------
+
+; Prefetcher (Speeds up the Windows boot process):
+; 0 = Disabled.
+; 1 = Application launch prefetching.
+; 2 = Boot prefetching.
+; 3 = Applaunch and Boot prefetching (Default).
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Allows boot files to be placed optimally on the hard-drive for faster booting.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction]
+"Enable"="y"
+;-------------------------------------------------------------------------------

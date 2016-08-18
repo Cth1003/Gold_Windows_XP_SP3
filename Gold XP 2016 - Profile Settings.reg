@@ -1,0 +1,962 @@
+Windows Registry Editor Version 5.00
+
+;===============================================================================
+; ************************** Folder view and Taskbar **************************
+;===============================================================================
+
+; Enables ClearType Font.
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingGamma"=dword:000003e8
+"FontSmoothingOrientation"=dword:00000001
+"FontSmoothingType"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Don't Display the confirm message when opening a System Folder. 
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"WebViewBarricade"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Displays the file extensions.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the Hidden Files and Folders.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Displays the protected operating system files.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"ShowSuperHidden"=dword:00000001
+;"SuperHidden"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Sets the maximum number of folders view settings that Windows XP will remember (dword:00002710 = 10000).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell]
+"BagMRU Size"=dword:00002710
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam]
+"BagMRU Size"=dword:00002710
+
+;-------------------------------------------------------------------------------
+
+; Expands the Details box on the left sidebar in Explorer.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{00000000-0000-0000-0000-000000000000}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{00021400-0000-0000-C000-000000000046}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{1703CF31-6CEB-48EB-B026-D35A82A9A65B}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{208D2C60-3AEA-1069-A2D7-08002B30309D}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{20D04FE0-3AEA-1069-A2D8-08002B30309D}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{21EC2020-3AEA-1069-A2DD-08002B30309D}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{2227A280-3AEA-1069-A2DE-08002B30309D}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{450D8FBA-AD25-11D0-98A8-0800361B1103}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{46E06680-4BF0-11D1-83EE-00A0C90DC849}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{645FF040-5081-101B-9F08-00AA002F954E}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{7007ACC7-3202-11D1-AAD2-00805FC1270E}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{86747AC0-42A0-1069-A2E6-08002B30309D}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{88C6C381-2E85-11D0-94DE-444553540000}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{8BB49B4E-039A-4CC8-B6C8-6782B2E386F5}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{953D732D-AB45-11D2-84E0-00C04FA31A86}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{C0542A90-4BF0-11D1-83EE-00A0C90DC849}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{D6277990-4C6A-11CF-8D87-00AA0060F5BF}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{E17D4FC0-5564-11D1-83F2-00A0C90DC849}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{E211B736-43FD-11D1-9EFB-0000F8757FCD}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{E88DCCE0-B7B3-11D1-A9F0-00AA0060FA31}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{F3364BA0-65B9-11CE-A9BA-00AA004AE837}]
+"ExpandDetailsTasks"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam\DUIBags\ShellFolders\{F5175861-2688-11D0-9C5E-00AA00A45957}]
+"ExpandDetailsTasks"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables the Windows XP Start Menu advertising.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"StartMenuInit"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Don't Group Similar Taskbar Buttons.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarGlomming"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Enables the Windows XP Quick Launch.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams\Desktop]
+"TaskbarWinXP"=hex:0c,00,00,00,08,00,00,00,03,00,00,00,00,00,00,00,b0,e2,2b,d8,\
+  64,57,d0,11,a9,6e,00,c0,4f,d7,05,a2,22,00,1c,00,0a,11,00,00,1a,00,00,00,01,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,4c,00,00,00,01,14,02,00,00,00,\
+  00,00,c0,00,00,00,00,00,00,46,81,00,00,00,11,00,00,00,00,9b,1d,95,44,55,cf,\
+  01,36,10,af,81,47,55,cf,01,20,58,3b,0c,46,55,cf,01,00,00,00,00,00,00,00,00,\
+  01,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,02,14,00,1f,50,e0,4f,d0,\
+  20,ea,3a,69,10,a2,d8,08,00,2b,30,30,9d,19,00,2f,43,3a,5c,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,5c,00,31,00,00,00,00,00,8b,44,84,29,\
+  10,00,44,4f,43,55,4d,45,7e,31,00,00,44,00,03,00,04,00,ef,be,8b,44,ae,00,8b,\
+  44,84,29,14,00,00,00,44,00,6f,00,63,00,75,00,6d,00,65,00,6e,00,74,00,73,00,\
+  20,00,61,00,6e,00,64,00,20,00,53,00,65,00,74,00,74,00,69,00,6e,00,67,00,73,\
+  00,00,00,18,00,36,00,31,00,00,00,00,00,8b,44,89,29,10,00,41,64,6d,69,6e,00,\
+  22,00,03,00,04,00,ef,be,8b,44,84,29,8b,44,89,29,14,00,00,00,41,00,64,00,6d,\
+  00,69,00,6e,00,00,00,14,00,64,00,31,00,00,00,00,00,8b,44,75,2a,13,00,41,50,\
+  50,4c,49,43,7e,31,00,00,4c,00,03,00,04,00,ef,be,8b,44,84,29,8b,44,75,2a,14,\
+  00,36,00,41,00,70,00,70,00,6c,00,69,00,63,00,61,00,74,00,69,00,6f,00,6e,00,\
+  20,00,44,00,61,00,74,00,61,00,00,00,40,73,68,65,6c,6c,33,32,2e,64,6c,6c,2c,\
+  2d,32,31,37,36,35,00,18,00,42,00,31,00,00,00,00,00,8b,44,84,29,14,00,4d,49,\
+  43,52,4f,53,7e,31,00,00,2a,00,03,00,04,00,ef,be,8b,44,84,29,8b,44,86,29,14,\
+  00,00,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,00,00,18,00,\
+  52,00,31,00,00,00,00,00,8b,44,86,29,10,00,49,4e,54,45,52,4e,7e,31,00,00,3a,\
+  00,03,00,04,00,ef,be,8b,44,84,29,8b,44,86,29,14,00,00,00,49,00,6e,00,74,00,\
+  65,00,72,00,6e,00,65,00,74,00,20,00,45,00,78,00,70,00,6c,00,6f,00,72,00,65,\
+  00,72,00,00,00,18,00,48,00,31,00,00,00,00,00,8b,44,87,29,11,00,51,55,49,43,\
+  4b,4c,7e,31,00,00,30,00,03,00,04,00,ef,be,8b,44,84,29,8b,44,87,29,14,00,00,\
+  00,51,00,75,00,69,00,63,00,6b,00,20,00,4c,00,61,00,75,00,6e,00,63,00,68,00,\
+  00,00,18,00,00,00,60,00,00,00,03,00,00,a0,58,00,00,00,00,00,00,00,75,6e,6b,\
+  6e,6f,77,6e,2d,66,66,39,65,32,63,37,00,ec,40,47,27,0c,aa,8a,48,98,aa,bc,91,\
+  bf,55,79,99,a2,5c,15,9e,38,c1,e3,11,a1,be,08,00,27,1f,cb,f5,ec,40,47,27,0c,\
+  aa,8a,48,98,aa,bc,91,bf,55,79,99,a2,5c,15,9e,38,c1,e3,11,a1,be,08,00,27,1f,\
+  cb,f5,10,00,00,00,05,00,00,a0,1a,00,00,00,23,01,00,00,00,00,00,00,08,00,00,\
+  00,02,00,00,00,58,02,00,00,01,00,00,00,05,00,00,00,8a,00,00,00,01,00,00,00,\
+  7c,00,32,00,2f,03,00,00,8b,44,86,29,20,00,4c,41,55,4e,43,48,7e,31,2e,4c,4e,\
+  4b,00,00,60,00,03,00,04,00,ef,be,8b,44,86,29,8b,44,86,29,14,00,00,00,4c,00,\
+  61,00,75,00,6e,00,63,00,68,00,20,00,49,00,6e,00,74,00,65,00,72,00,6e,00,65,\
+  00,74,00,20,00,45,00,78,00,70,00,6c,00,6f,00,72,00,65,00,72,00,20,00,42,00,\
+  72,00,6f,00,77,00,73,00,65,00,72,00,2e,00,6c,00,6e,00,6b,00,00,00,1c,00,00,\
+  00,00,00,00,00,72,00,00,00,04,00,00,00,64,00,32,00,aa,03,00,00,8b,44,89,2a,\
+  20,00,4d,45,44,49,41,50,7e,31,2e,4c,4e,4b,00,00,48,00,03,00,04,00,ef,be,8b,\
+  44,bd,2a,8b,44,bd,2a,14,00,00,00,4d,00,65,00,64,00,69,00,61,00,20,00,50,00,\
+  6c,00,61,00,79,00,65,00,72,00,20,00,43,00,6c,00,61,00,73,00,73,00,69,00,63,\
+  00,2e,00,6c,00,6e,00,6b,00,00,00,1c,00,00,00,00,00,00,00,68,00,00,00,02,00,\
+  00,00,5a,00,32,00,da,02,00,00,8b,44,84,2a,20,00,4d,4f,5a,49,4c,4c,7e,31,2e,\
+  4c,4e,4b,00,00,3e,00,03,00,04,00,ef,be,8b,44,bd,2a,8b,44,bd,2a,14,00,00,00,\
+  4d,00,6f,00,7a,00,69,00,6c,00,6c,00,61,00,20,00,46,00,69,00,72,00,65,00,66,\
+  00,6f,00,78,00,2e,00,6c,00,6e,00,6b,00,00,00,1c,00,00,00,00,00,00,00,76,00,\
+  00,00,00,00,00,00,68,00,32,00,4f,00,00,00,8b,44,87,29,20,00,53,48,4f,57,44,\
+  45,7e,31,2e,53,43,46,00,00,4c,00,03,00,04,00,ef,be,8b,44,87,29,8b,44,87,29,\
+  14,00,36,00,53,00,68,00,6f,00,77,00,20,00,44,00,65,00,73,00,6b,00,74,00,6f,\
+  00,70,00,2e,00,73,00,63,00,66,00,00,00,40,78,70,73,70,32,72,65,73,2e,64,6c,\
+  6c,2c,2d,36,31,30,30,00,1c,00,00,00,00,00,00,00,72,00,00,00,03,00,00,00,64,\
+  00,32,00,20,03,00,00,8b,44,d2,2a,20,00,57,49,4e,44,4f,57,7e,31,2e,4c,4e,4b,\
+  00,00,48,00,03,00,04,00,ef,be,8b,44,d2,2a,8b,44,d2,2a,14,00,00,00,57,00,69,\
+  00,6e,00,64,00,6f,00,77,00,73,00,20,00,4d,00,65,00,64,00,69,00,61,00,20,00,\
+  50,00,6c,00,61,00,79,00,65,00,72,00,2e,00,6c,00,6e,00,6b,00,00,00,1c,00,00,\
+  00,00,00,00,00,00,00,00,00,60,07,00,00,00,00,00,00,1e,00,00,00,00,00,00,00,\
+  00,00,00,00,1e,00,00,00,00,00,00,00,01,00,00,00,01,00,00,00,aa,4f,28,68,48,\
+  6a,d0,11,8c,78,00,c0,4f,d9,18,b4,7f,01,00,00,60,0d,00,00,00,00,00,00,1e,00,\
+  00,00,00,00,00,00,00,00,00,00,1e,00,00,00,00,00,00,00,01,00,00,00,02,00,00,\
+  00,8b,8a,0d,54,3f,1c,32,4e,81,32,53,0f,6a,50,20,90,1d,00,00,00,60,05,00,00,\
+  00,00,00,00,1c,00,00,00,00,00,00,00,00,00,00,00,1c,00,00,00,00,00,00,00,01,\
+  00,00,00
+;-------------------------------------------------------------------------------
+
+; Don't hide inactive icons in Taskbar Tray.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"EnableAutoTray"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Shows small Icons size in the left panel of the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_LargeMFUIcons"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; How many "frequently accessed programs" should be listed at the Start Menu in the left panel (dword:0000000a = 10).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_MinMFU"=dword:0000000a
+;-------------------------------------------------------------------------------
+
+; Don't pin Internet Browser and E-mail program in the left panel of the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StartPage]
+"Favorites"=hex:ff
+"FavoritesResolve"=-
+;-------------------------------------------------------------------------------
+
+; Disables the Highlighting newly installed Programs at the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_NotifyNewApps"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the Favorites in the Start Menu.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"StartMenuFavorites"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Displays the My Network Places in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowNetPlaces"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Displays the Network Connections in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowNetConn"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Removes the Set Program Access And Defaults in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowSetProgramAccessAndDefaults"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Removes the Help and Support in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowHelp"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Removes the My Music link in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowMyMusic"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Removes the My Pictures in the Start Menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_ShowMyPics"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Removes the Printers and Faxes in the Start Menu.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"Start_ShowPrinters"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Hides the Taskbar Tray Volume ICON.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\SysTray]
+;"Services"=dword:0000001b
+;-------------------------------------------------------------------------------
+
+; Displays the My Computer ICON at the desktop.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the My Network Places ICON at the desktop.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{208D2C60-3AEA-1069-A2D7-08002B30309D}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{208D2C60-3AEA-1069-A2D7-08002B30309D}"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the My Documents ICON at the desktop.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{450D8FBA-AD25-11D0-98A8-0800361B1103}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{450D8FBA-AD25-11D0-98A8-0800361B1103}"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the Internet Explorer ICON at the desktop.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{871C5380-42A0-1069-A2EA-08002B30309D}"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{871C5380-42A0-1069-A2EA-08002B30309D}"=dword:00000000
+;-------------------------------------------------------------------------------
+
+;===============================================================================
+; **************************** General Customation *****************************
+;===============================================================================
+
+; Sets the Command Prompt colour. First value is background colour and the second value is foreground colour. (dword:00000002 = Black Background and Green Text)
+; 0=Black	8=Grey
+; 1=Blue	9=Light Blue
+; 2=Green	a=Light Green
+; 3=Aqua	b=Light Aqua
+; 4=Red		c=Light Red
+; 5=Purple	d=Light Purple
+; 6=Yellow	e=Light Yellow
+; 7=White	f=Bright White
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+;"DefaultColor"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Disables "Shortcut to" when creating new shortcuts.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+;-------------------------------------------------------------------------------
+
+; Maximize Clipboard Window in the ClipBook Viewer.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Clipbook]
+"WindowsClipboard"=hex:2c,00,00,00,00,00,00,00,03,00,00,00,00,00,00,00,8b,01,\
+  00,00,fc,ff,ff,ff,e2,ff,ff,ff,00,00,00,00,00,00,00,00,a0,02,00,00,36,01,00,\
+  00
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ***************************** General settings ******************************
+;===============================================================================
+
+; Disables the StickyKeys Keyboard shortcut (Popups up when pressing the SHIFT key five times).
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+;-------------------------------------------------------------------------------
+
+; Disables the FilterKeys Keyboard shortcut (Popups up when pressing the SHIFT key for eight seconds).
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="122"
+;-------------------------------------------------------------------------------
+
+; Disables the ToggleKeys Keyboard shortcut (Popups up when pressing the NUM LOCK key for five seconds).
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="58"
+;-------------------------------------------------------------------------------
+
+; Disables the "Confirm Toolbar Close" dialog prompt when closing a Toolbar at the Windows Taskbar.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
+"WarnBeforeCloseBand"="no"
+;-------------------------------------------------------------------------------
+
+; Disables the Screen Settings balloon popup.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\DontShowMeThisDialogAgain]
+;"ScreenCheck"="no"
+;-------------------------------------------------------------------------------
+
+; Disables the Web Files and Folders connection.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"NoFileFolderConnection"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables the Search Assistant.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Search Assistant]
+"SocialUI"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Enables the Advanced Search.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Search Assistant]
+"UseAdvancedSearchAlways"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Enables the searching in the System Folders.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"SearchHidden"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Enables the searching in the Hidden Files and Folders.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"SearchHidden"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Enables the Case Sensitive searching.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+;"CaseSensitive"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Enables the Tape Backup searching.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"SearchSlowFiles"=dword:00000001
+;------------------------------------------------------------------------------
+
+; Changes the Menu Display Delay (Default = 400).
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="100"
+;-------------------------------------------------------------------------------
+
+; Skips the Open With web service prompt for unknown file types.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"InternetOpenWith"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Displays the advanced Summary at the file Properties menu.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\PropSum]
+"Advanced"=dword:00000001
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; **************************** Internet Explorer 8 ****************************
+;===============================================================================
+
+; Disables the Internet Explorer Tour on the first start.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"IE8RunOnceCompletionTime"=hex:38,36,fe,44,50,a6,c9,01
+"IE8RunOnceLastShown"=dword:00000001
+"IE8RunOnceLastShown_TIMESTAMP"=hex:42,e4,e9,28,50,a6,c9,01
+"IE8RunOncePerInstallCompleted"=dword:00000001
+"IE8TourShown"=dword:00000001
+"IE8TourShownTime"=a8,51,4b,e4,fc,a4,c9,01
+;-------------------------------------------------------------------------------
+
+; Start in a Maximized window.
+
+"Window_Placement"=hex:2c,00,00,00,02,00,00,00,03,00,00,00,ff,ff,ff,ff,ff,ff,\
+  ff,ff,ff,ff,ff,ff,ff,ff,ff,ff,27,00,00,00,27,00,00,00,47,03,00,00,7f,02,00,\
+  00
+;-------------------------------------------------------------------------------
+
+; Hides the Compatibility View Button.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\CommandBar]
+"ShowCompatibilityViewButton"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables the Compatibility View Button Balloon popup.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\CommandBar]
+"CompatibilityViewButtonBalloonCount"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Hides the top menu bar.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"AlwaysShowMenus"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Hides the Favorites Bar.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\LinksBar]
+"Enabled"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Sets the Toolbar Text Option (dword:00000000 = Show Selective text) (dword:00000001 = Show all text lables) (dword:00000002 = Show Only Icons).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\CommandBar]
+"TextOption"=dword:00000002
+;-------------------------------------------------------------------------------
+
+; Enables the Auto-Complete Forms.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\IntelliForms]
+"AskUser"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Use FormSuggest"="yes"
+;-------------------------------------------------------------------------------
+
+; Enables the download for updates from search providers.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DownloadUpdates"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Prevents the prompt to install Windows Search 4 when typing in the address bar.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\WindowsSearch]
+"ShowPrompt"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Replaces the default search provider "Live" with "Bing".
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{0633EE93-D776-472f-A0FF-E1416B8B2E3A}]
+"DisplayName"="Bing"
+"FaviconURLFallback"="http://www.bing.com/favicon.ico"
+"SuggestionsURLFallback"="http://api.bing.com/qsml.aspx?query={searchTerms}&maxwidth={ie:maxWidth}&rowheight={ie:rowHeight}&sectionHeight={ie:sectionHeight}&FORM=IE8SSC&market={language}"
+"URL"="http://www.bing.com/search?q={searchTerms}&src=IE-SearchBox&FORM=IE8SRC"
+;-------------------------------------------------------------------------------
+
+; Removes the default Search Provider.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{0633EE93-D776-472f-A0FF-E1416B8B2E3A}]
+;"DisplayName"=-
+;"FaviconPath"=-
+;"FaviconURLFallback"=-
+;"SuggestionsURLFallback"=-
+;"URL"=-
+;"Deleted"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Adds "Google" as a search provider.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{66C68655-D58D-409E-846F-296E7366BAA4}]
+"DisplayName"="Google"
+"FaviconURL"="http://www.google.com/favicon.ico"
+"OSDFileURL"="http://www.iegallery.com/en-us/AddOns/DownloadAddOn?resourceId=813"
+"ShowSearchSuggestions"=dword:00000001
+"SuggestionsURL"="http://clients5.google.com/complete/search?q={searchTerms}&client=ie8&mw={ie:maxWidth}&sh={ie:sectionHeight}&rh={ie:rowHeight}&inputencoding={inputEncoding}&outputencoding={outputEncoding}"
+"URL"="http://www.google.com/search?q={searchTerms}&sourceid=ie7&rls=com.microsoft:{language}:{referrer:source}&ie={inputEncoding?}&oe={outputEncoding?}"
+;-------------------------------------------------------------------------------
+
+; Adds "Yahoo!" as a search provider.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{F83B7E7A-688A-47DA-A9E5-A40D9E15266B}]
+"DisplayName"="Yahoo!"
+"FaviconURL"="http://search.yahoo.com/favicon.ico"
+"OSDFileURL"="http://www.iegallery.com/en-us/AddOns/DownloadAddOn?resourceId=816"
+"ShowSearchSuggestions"=dword:00000001
+"SuggestionsURL"="http://ie.search.yahoo.com/os?appid=ie8&command={searchTerms}"
+"URL"="http://search.yahoo.com/search?p={searchTerms}&b={startPage?}&fr=ie8"
+;-------------------------------------------------------------------------------
+
+; Adds "DuckDuckGo" as a search provider.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{D671275A-5E31-42B8-924E-2DDF8CC2EADB}]
+"Codepage"=dword:0000fde9
+"DisplayName"="DuckDuckGo"
+"FaviconURL"="https://duckduckgo.com/favicon.ico"
+"OSDFileURL"="https://duckduckgo.com/opensearch.xml"
+"ShowSearchSuggestions"=dword:00000001
+"SuggestionsURL_JSON"="https://ac.duckduckgo.com/ac/?q={searchTerms}&type=list"
+"URL"="https://duckduckgo.com/?q={searchTerms}&kp=-1"
+;-------------------------------------------------------------------------------
+
+; Sets the Default Search Provider.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{66C68655-D58D-409E-846F-296E7366BAA4}"
+;-------------------------------------------------------------------------------
+
+; Sets the Main Start Page.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Start Page"="http://www.computerworm.net/"
+;-------------------------------------------------------------------------------
+
+; Disables the Suggested Sites.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Suggested Sites]
+"Enabled"=dword:00000000
+"MigrationTime"=hex:80,aa,a9,e0,fc,af,c9,01
+"ObjectsCreated"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables the Popup Blocker.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\New Windows]
+;"PopupMgr"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables the SmartScreen Filter (Phishing Filter).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\PhishingFilter]
+"EnabledV8"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Enables the Automatic prompting for file downloads option.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"2200"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Enables the Mixed Content option (Disabling the anoning HTTPS pop-up).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1609"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Closes the transfer box when the download is completed.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"NotifyDownloadComplete"="no"
+;-------------------------------------------------------------------------------
+
+; Sets the Prune History days (dword:00000030 = 42 days).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Url History]
+"DaysToKeep"=dword:0000002a
+;-------------------------------------------------------------------------------
+
+; Sets the Temporary Internet Files Cache size (dword:0007d000 = 500 MB).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content]
+"CacheLimit"=dword:0007d000
+;-------------------------------------------------------------------------------
+
+; Emptys the temporary internet files when closing the browser.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Privacy]
+;"ClearBrowsingHistoryOnExit"=dword:00000001
+;[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012009032920090330]
+;-------------------------------------------------------------------------------
+
+; Sets the default selected delete options for the Browser History.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Privacy]
+"CleanCookies"=dword:00000001
+"CleanForms"=dword:00000001
+"CleanHistory"=dword:00000001
+"CleanInPrivateBlocking"=dword:00000001
+"CleanPassword"=dword:00000001
+"CleanTIF"=dword:00000001
+"UseAllowList"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Blocks the Third-party Cookies.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"PrivacyAdvanced"=dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"{A8A88C49-5EB2-4990-A1A2-0876022C854F}"=hex:1a,37,61,59,23,52,35,0c,7a,5f,20,\
+  17,2f,1e,1a,19,0e,2b,01,73,13,37,13,12,14,1a,15,39
+;-------------------------------------------------------------------------------
+
+; Disables the prompt when viewing a page over a secure connection (HTTPS).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"WarnOnZoneCrossing"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Shows the placeholders for images before they are downloaded.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Show image placeholders"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the option when a new Tab is opened (dword:00000000 = A blank page) (dword:00000001 = Your First home page) (dword:00000002 = The new tab page).
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing]
+;"NewTabPageShow"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Saves the Address Bar history on exit.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Save_Session_History_On_Exit"="yes"
+;-------------------------------------------------------------------------------
+
+; Disables the warning message when closing the Internet Explorer.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing]
+"WarnOnClose"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Microsoft Update Catalog ActiveX Allowance.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Stats\{5AE58FCF-6F6A-49B2-B064-02492C66E3F4}\iexplore]
+"Flags"=dword:00000004
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Stats\{5AE58FCF-6F6A-49B2-B064-02492C66E3F4}\iexplore\AllowedDomains\microsoft.com]"
+;-------------------------------------------------------------------------------
+
+; Microsoft Update ActiveX Allowance.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Stats\{6E32070A-766D-4EE6-879C-DC1FA91D2FC3}\iexplore]
+"Flags"=dword:00000004
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ext\Stats\{6E32070A-766D-4EE6-879C-DC1FA91D2FC3}\iexplore\AllowedDomains\microsoft.com]"
+;-------------------------------------------------------------------------------
+
+: Adds all local sites and network paths and proxy server bypass addresses to the Local Intranet Zone.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1]
+"Flags"=dword:000000db
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ************************** Windows Media Player 11 **************************
+;===============================================================================
+
+; Disables the Welcome screen at the first startup.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"FirstRun"=dword:00000000
+"AcceptedPrivacyStatement"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Creates a Windows Media Player shortcut on the Desktop and Quick Launche.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Setup\UserOptions]
+"DesktopShortcut"="yes"
+"QuickLaunchShortcut"="yes"
+;-------------------------------------------------------------------------------
+
+; Disables the automatic codecs download.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"UpgradeCodecPrompt"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Don't show the Minimize Dialog Box.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"ShowMinimizeDialog"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Turns Off the Shuffle Mode (Radome playlist).
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"ModeShuffle"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Turns On the DirectX Video Acceleration.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences\VideoSettings]
+"EnableDXVA_WMV"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Selects the visualization plugin to Alchemy.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"CurrentEffectPreset"=dword:00000000
+"CurrentEffectType"="Alchemy"
+"ShowEffects"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables the Auto Rip disc when a disc is inserted.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"AutoCopyCD"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Ejec CD when ripping is complete.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"AutoEjectCD"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the Audio quality ripping (dword:00000001 = MP3) (dword:0002ee00 = 192 Kbps).
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"CDRecordMode"=dword:00000001
+"MP3RecordRate"=dword:0002ee00
+;-------------------------------------------------------------------------------
+
+; Sets the Disc Burn speed (dword:00000001 = Fast).
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"CDBurnSpeed"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Save Play list in .M3U format on a disc.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"DataCDSavePlaylistAsM3U"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Disables the updating and displaying of media file informations form the internet.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"SilentAcquisition"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Disables the automatically downloading of the usage rights when playing a file.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"MetadataRetrieval"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Don't delete files from computer when deleted in library.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"DeleteRemovesFromComputer"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Don't add played media files to library.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"AutoAddMusicToLibrary"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Enables the Advanced Option in Monitor Folders.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"SearchAdvancedOpen"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Don't delete contents from devices when deleting playlist.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"DeleteDevicePlaylistContents"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Don't convert video files in background.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"BackgroundTranscodeVideo"=dword:00000000
+;-------------------------------------------------------------------------------
+
+; Sets the Skin Color to Dark Black/Gray.
+
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+"AppColorAux1"="#919191"
+"AppColorAux2"="#D7D7D7"
+"AppColorAux3"="#B4B4B4"
+"AppColorAux4"="#BDBDBD"
+"AppColorAux5"="#4D4D4D"
+"AppColorAux6"="whitesmoke"
+"AppColorAux7"="#F2F2F2"
+"AppColorAux8"="#B4B4B4"
+"AppColorAux9"="#5F5F5F"
+"AppColorAux10"="#363636"
+"AppColorAux11"="gainsboro"
+"AppColorAux12"="#393939"
+"AppColorAux13"="#B5B5B5"
+"AppColorAux14"="#5F5F5F"
+"AppColorAux15"="white"
+"AppColorDarkV11"="#212121"
+"AppColorLightV11"="#F2F2F2"
+"AppColorMediumV11"="#F1F1F1"
+"BackHueShift"=hex:00,00,00,00
+"BackSaturation"=hex:00,00,00,00
+"ToolBarButtonHighlightV11"="#A8A8A8"
+"ToolBarButtonShadowV11"="#3F3F3F"
+"ToolBarButtonFaceV11"="#757575"
+"ItemPlayingBackgroundColor"="#5F5F5F"
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ********************************** Network **********************************
+;===============================================================================
+
+; Disables the automatic search for folders and printers on the network.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"NoNetCrawling"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the number of Simultaneous HTTP Server Connections (dword:0000000c = 12).
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+;"MaxConnectionsPerServer"=dword:0000000c
+;"MaxConnectionsPer1_0Server"=dword:0000000c
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; **************************** Startup / Shutdown *****************************
+;===============================================================================
+
+; Sets the automatic termination time for a frozen application (10000 milliseconds = 10 seconds) (20000 milliseconds = 20 seconds).
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="10000"
+"WaitToKillAppTimeout"="20000"
+;-------------------------------------------------------------------------------
+
+
+;===============================================================================
+; ********************************* Security **********************************
+;===============================================================================
+
+; Don't display the delete confirmation dialog when deleting a file.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+;"ShellState"=hex:24,00,00,00,37,28,01,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+;  01,00,00,00,0d,00,00,00,00,00,00,00,02,00,00,00
+;-------------------------------------------------------------------------------
+
+; Disables the end of Windows XP support notification.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion]
+;"DisableEOSNotification"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Enables the user:pass URL option.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_HTTP_USERNAME_PASSWORD_DISABLE]
+"iexplore.exe"=dword:00000000
+"explorer.exe"=dword:00000000
+;-------------------------------------------------------------------------------
+
+;===============================================================================
+; ***************************** Sytem Performance *****************************
+;===============================================================================
+
+; Disables the caching of Thumbnails.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"DisableThumbnailCache"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Launchs the Windows Desktop in a Separate Process.
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+;"DesktopProcess"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Displays the Full Path in the Explorer Title Bar.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState]
+"FullPath"=dword:00000001
+;-------------------------------------------------------------------------------
+
+; Sets the Remember Folders View settings cache (dword:00002710 = 10000).
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell]
+"BagMRU Size"=dword:00002710
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\ShellNoRoam]
+"BagMRU Size"=dword:00002710
+;-------------------------------------------------------------------------------
+
+; Turns on all the Task Manager settings.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\TaskManager]
+"UsrColumnSettings"=hex:1c,0c,00,00,34,04,00,00,00,00,00,00,78,00,00,00,01,00,\
+  00,00,1d,0c,00,00,35,04,00,00,01,00,00,00,23,00,00,00,01,00,00,00,1e,0c,00,\
+  00,36,04,00,00,00,00,00,00,5d,00,00,00,01,00,00,00,1f,0c,00,00,39,04,00,00,\
+  00,00,00,00,64,00,00,00,01,00,00,00,20,0c,00,00,37,04,00,00,00,00,00,00,78,\
+  00,00,00,01,00,00,00
+"Preferences"=hex:9c,02,00,00,e8,03,00,00,02,00,00,00,01,00,00,00,01,00,00,00,\
+  0a,00,00,00,02,00,00,00,76,02,00,00,c9,01,00,00,02,00,00,00,00,00,00,00,01,\
+  00,00,00,02,00,00,00,03,00,00,00,04,00,00,00,05,00,00,00,06,00,00,00,07,00,\
+  00,00,08,00,00,00,09,00,00,00,0a,00,00,00,0b,00,00,00,0c,00,00,00,0d,00,00,\
+  00,0e,00,00,00,0f,00,00,00,10,00,00,00,11,00,00,00,12,00,00,00,13,00,00,00,\
+  14,00,00,00,15,00,00,00,16,00,00,00,17,00,00,00,18,00,00,00,19,00,00,00,ff,\
+  ff,ff,ff,9b,00,78,00,65,00,50,00,5a,00,77,00,91,00,62,00,6a,00,78,00,6b,00,\
+  7c,00,92,00,61,00,5d,00,64,00,6e,00,89,00,9f,00,70,00,5f,00,75,00,5f,00,9b,\
+  00,b1,00,82,00,3c,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,03,00,00,00,\
+  04,00,00,00,05,00,00,00,06,00,00,00,07,00,00,00,08,00,00,00,09,00,00,00,0a,\
+  00,00,00,0b,00,00,00,0c,00,00,00,0d,00,00,00,0e,00,00,00,0f,00,00,00,10,00,\
+  00,00,11,00,00,00,12,00,00,00,13,00,00,00,14,00,00,00,15,00,00,00,16,00,00,\
+  00,17,00,00,00,18,00,00,00,19,00,00,00,ff,ff,ff,ff,01,00,00,00,00,00,00,00,\
+  00,00,00,00,01,00,00,00,01,00,00,00,01,00,00,00,01,00,00,00,00,00,00,00,01,\
+  00,00,00,02,00,00,00,03,00,00,00,04,00,00,00,05,00,00,00,06,00,00,00,07,00,\
+  00,00,08,00,00,00,09,00,00,00,0a,00,00,00,0b,00,00,00,0c,00,00,00,0d,00,00,\
+  00,0e,00,00,00,0f,00,00,00,10,00,00,00,11,00,00,00,12,00,00,00,13,00,00,00,\
+  14,00,00,00,15,00,00,00,16,00,00,00,17,00,00,00,18,00,00,00,ff,ff,ff,ff,90,\
+  00,00,00,32,00,00,00,6b,00,00,00,3e,00,00,00,23,00,00,00,46,00,00,00,46,00,\
+  00,00,64,00,00,00,46,00,00,00,46,00,00,00,46,00,00,00,46,00,00,00,46,00,00,\
+  00,46,00,00,00,3c,00,00,00,3c,00,00,00,3c,00,00,00,3c,00,00,00,3c,00,00,00,\
+  46,00,00,00,46,00,00,00,46,00,00,00,46,00,00,00,46,00,00,00,46,00,00,00,23,\
+  00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,03,00,00,00,04,00,00,00,05,00,\
+  00,00,06,00,00,00,07,00,00,00,08,00,00,00,09,00,00,00,0a,00,00,00,0b,00,00,\
+  00,0c,00,00,00,0d,00,00,00,0e,00,00,00,0f,00,00,00,10,00,00,00,11,00,00,00,\
+  12,00,00,00,13,00,00,00,14,00,00,00,15,00,00,00,16,00,00,00,17,00,00,00,18,\
+  00,00,00,ff,ff,ff,ff,4f,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00
+;-------------------------------------------------------------------------------
